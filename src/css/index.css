@@ -1,0 +1,45 @@
+@import './datagrid.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#app {
+  padding: 10px;
+  display: flex;
+}
+
+.grid-container {
+  flex-grow: 1;
+  /* height: 400px; */
+}
+
+
+
+input, select {
+  border: none;
+  outline: unset;
+}
+
+input[type=number] {
+  width: 80px;
+  text-align: right;
+}
+
+.MuiDataGrid-cell:focus-within {
+  outline: unset !important;
+}
+
+p {
+  margin: 0;
+}

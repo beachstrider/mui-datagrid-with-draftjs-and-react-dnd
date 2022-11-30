@@ -1,0 +1,8 @@
+.toolbar {
+  border: unset;
+  background: transparent;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  gap: 12px;
+}

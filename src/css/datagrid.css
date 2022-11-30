@@ -1,0 +1,83 @@
+.MuiDataGrid-main>div:nth-last-child(2) {
+  display: none;
+}
+
+.draft-editor-container {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  cursor: text;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  padding: 4px 10px;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.draft-editor-container:active,
+.draft-editor-container:focus,
+.draft-editor-container:focus-within {
+  border-bottom: 2px solid #1976d2;
+}
+
+.MuiDataGrid-row--editing>.MuiDataGrid-cell {
+  /* align-items: flex-start !important; */
+}
+
+.MuiDataGrid-dndRowContainer {
+  position: relative;
+}
+
+.MuiDataGrid-row--dragHovering {
+  border: solid 1px #444;
+  box-sizing: border-box;
+}
+
+.MuiDataGrid-rowGap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 6px;
+  background-color: transparent;
+  z-index: 100;
+  margin-top: -3px;
+}
+
+.MuiDataGrid-rowGap>div {
+  width: 100%;
+  height: 2px;
+  margin: 0;
+}
+
+.MuiDataGrid-dndRowContainer .MuiDataGrid-rowGap.first>div {
+  margin-top: 1px;
+}
+
+.MuiDataGrid-dndRowContainer:last-child .MuiDataGrid-rowGap>div {
+  margin-bottom: 2px;
+}
+
+.MuiDataGrid-rowGap--dragHovering>div {
+  background-color: #444;
+}
+
+.MuiDataGrid-root--densityCompact .MuiDataGrid-cell {
+  min-height: 36px;
+}
+
+.MuiDataGrid-root--densityStandard .MuiDataGrid-cell {
+  min-height: 52px;
+}
+
+.MuiDataGrid-root--densityComfortable .MuiDataGrid-cell {
+  min-height: 67px;
+}
+
+.MuiDataGrid-columnHeaderDraggableContainer {
+  position: relative;
+}
+
+.MuiDataGrid-dndColumn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
