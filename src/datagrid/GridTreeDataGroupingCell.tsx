@@ -1,22 +1,19 @@
-import { useEffect } from "react"
 import { Grid } from "@mui/material"
 import {
-  useGridSelector,
-  GridRowModes,
   GridActionsCellItem,
-  gridFilteredDescendantCountLookupSelector
+  GridRowModes,
+  gridFilteredDescendantCountLookupSelector,
+  useGridSelector
 } from "@mui/x-data-grid-pro"
 
-import SaveIcon from "@mui/icons-material/Save"
-import SettingsIcon from "@mui/icons-material/Settings"
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
-import ShortTextIcon from "@mui/icons-material/ShortText"
+import BorderColorIcon from "@mui/icons-material/BorderColor"
 import DragIndicatorIcon from "@mui/icons-material/DragIndicator"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
+import SaveIcon from "@mui/icons-material/Save"
+import ShortTextIcon from "@mui/icons-material/ShortText"
 
 import { useDrag } from "react-dnd"
-
-import { getChildrenIds } from "../utils/datagrid"
 
 const GridTreeDataGroupingCell = (props: any) => {
   const {
@@ -108,7 +105,7 @@ const GridTreeDataGroupingCell = (props: any) => {
         />
       )}
       <GridActionsCellItem
-        icon={isInEditMode ? <SaveIcon /> : <SettingsIcon />}
+        icon={isInEditMode ? <SaveIcon /> : <BorderColorIcon />}
         label="Edit"
         className="textPrimary"
         onClick={isInEditMode ? handleSaveClick(id) : handleEditClick(id)}

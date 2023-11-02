@@ -10,6 +10,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/roboto": "^4.5.8",
     "@mui/material": "^5.10.14",
+    "@mui/icons-material": "^5.10.14",
     "@mui/x-data-grid": "^5.17.12",
     "@mui/x-data-grid-generator": "^5.17.12",
     "@mui/x-data-grid-pro": "^5.17.12",
